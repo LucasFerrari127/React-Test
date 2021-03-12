@@ -5,20 +5,20 @@
 // Aca arriba se importan todas las cosas necesarias para el componente, incluyendo los css
 
 import "./artist-card.css";
+import { Link } from "react-router-dom";
 
 //Crear primera clase de nuestro primer componente. Antes se creaban a partir de clases ahora se usan funciones.
+// a la funcion se le pasan como parametro las props que necesito que levante para poder hacerlos reutilizables.
 
-function ArtistCard() {
+function ArtistCard(props) {
   return (
     <div className="col-md-3">
-      <div className="item">
-        <img
-          className="pic"
-          src="https://4.bp.blogspot.com/-5lGj9Kkvlpg/WWcSjnaneGI/AAAAAAABM0k/VukXPXPgS2kZJbjLjOFB4486_y9oiv6oACLcBGAs/s1600/Club%2BAtletico%2BNueva%2BChicago256x.png"
-          alt="Escudo Nueva Chicago"
-        />
-        <p className="titulo">Soy de Nueva Chicago</p>
-      </div>
+      <Link to={"/artista?" + props.titulo}>
+        <div className="item">
+          <img className="pic" src={props.img} alt="imagen" />
+          <p className="titulo">{props.titulo}</p>
+        </div>
+      </Link>
     </div>
   );
 }

@@ -1,0 +1,18 @@
+body {
+  color: #333;
+}
+
+.top50 {
+  margin-top: 50px;
+}
+
+.margenes50 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.pic-artist {
+  width: 300px;
+  max-height: 300px;
+  border-radius: 50%;
+}

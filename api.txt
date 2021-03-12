@@ -1,0 +1,7 @@
+Application name	find rock
+API key	55289ba7ad01bbf336f10ab0c12f845f
+Shared secret	6df6585d49a6668cdb041c160104a5ef
+Registered to	lferrari91
+
+
+http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=Cher&api_key=55289ba7ad01bbf336f10ab0c12f845f&format=json
